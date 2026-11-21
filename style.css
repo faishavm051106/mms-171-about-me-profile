@@ -1,0 +1,89 @@
+body {
+    background-color: #fff0f3;
+    font-family: 'Quicksand', 'Trebuchet MS', Arial, sans-serif;
+    color: #4a4044;
+    font-size: 1rem;
+    line-height: 1.65;
+    margin: 0;
+    padding: 20px;
+}
+
+h1, h2, h3 {
+    font-family: 'Cormorant Garamond', Georgia, 'Times New Roman', serif;
+    color: #8c5567;
+    margin-bottom: 0.5rem;
+    letter-spacing: 0.02em;
+}
+
+h1 {
+    font-size: 2.6rem;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 1.85rem;
+    font-weight: 700;
+}
+
+h3 {
+    font-size: 1.4rem;
+    font-style: italic;
+}
+
+p {
+    font-size: 1.05rem;
+}
+
+/* Flexbox and Box Model Layout */
+.bio-container {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    background-color: #ffffff;
+    padding: 30px;
+    border: 2px solid #ffd1dc;
+    border-radius: 12px;
+    margin: 40px auto;
+    max-width: 800px;
+    box-shadow: 0 4px 12px rgba(255, 182, 193, 0.15);
+}
+
+.bio-image {
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #ffb6c1;
+    flex-shrink: 0;
+}
+
+.bio-text {
+    flex-grow: 1;
+}
+
+.content-section {
+    background-color: #ffffff;
+    padding: 25px;
+    border: 2px solid #ffd1dc;
+    border-radius: 12px;
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+/* Responsive Media Query for Small Screens */
+@media (max-width: 600px) {
+    .bio-container {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+        margin: 20px 10px;
+    }
+
+    .bio-image {
+        margin-bottom: 15px;
+    }
+
+    h1 {
+        font-size: 2.1rem;
+    }
+}
